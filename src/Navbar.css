@@ -1,0 +1,55 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    position: relative;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar-item {
+    color: #333;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-item:hover {
+    text-decoration: underline;
+    transition: text-decoration 0.3s linear;
+}
+
+.navbar::before,
+.navbar::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.navbar::before {
+    left: 0;
+}
+
+.navbar::after {
+    right: 0;
+}

@@ -1,0 +1,14 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-image: url('./assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%; /* 100% ширины видимого окна */
+  height: 100vh;
+  position: relative; /* Убедитесь, что позиционирование установлено */
+  margin-top: -17px;
+}
