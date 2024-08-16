@@ -1,0 +1,76 @@
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.welcome-text {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.main-title {
+    font-size: 96px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.mental {
+    color: orange;
+}
+
+.fit {
+    color: green;
+}
+.button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.button {
+    position: relative; /* Для размещения псевдоэлементов относительно кнопки */
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: 2px solid #fff; /* Белая граница */
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden; /* Чтобы содержимое не выходило за границы кнопки */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Анимация изменения цвета фона и границы */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button::before {
+    content: ''; /* Пустой контент для псевдоэлемента */
+    position: absolute;
+    top: 50%;
+    left: 5px; /* Начальная позиция круга вне кнопки слева */
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%; /* Круглая форма */
+    transition: left 0.5s ease; /* Анимация перемещения */
+    transform: translateY(-50%); /* Центрируем круг по вертикали */
+}
+
+.button:hover::before {
+    left: calc(70%); /* Конечная позиция круга справа за кнопкой */
+}
+
+.sign-in {
+    background-color: green;
+    border: 2px solid #fff; /* Белая граница для другой кнопки */
+}
+
+.sign-in:hover {
+    background-color: #4a5d23; /* Темно-зеленый цвет */
+}

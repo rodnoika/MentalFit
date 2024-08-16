@@ -1,0 +1,98 @@
+/* AboutUs.css */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #f4f4f4;
+    height: 100vh;
+    box-sizing: border-box; /* Учитываем padding в общей высоте */
+
+}
+
+.about-header {
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.about-header h1 {
+    font-size: 30px; /* Размер шрифта заголовка "О Нас" оставим без изменений */
+    color: #333;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200vw; /* Ограничьте ширину для лучшего восприятия */
+}
+
+.about-text {
+    text-align: center;
+    max-width: 1000vw; /* Увеличиваем максимальную ширину для текстового блока */
+}
+
+.about-text h2 {
+    font-size: 48px; /* Увеличиваем размер шрифта заголовка */
+    color: #333;
+}
+
+.about-text ul {
+    list-style-type: disc;
+    padding-left: 30px; /* Увеличиваем отступ слева для списка */
+    text-align: left;
+    font-size: 24px; /* Увеличиваем размер шрифта для списка */
+    color: #666;
+    line-height: 1.8; /* Увеличиваем высоту строки */
+}
+
+
+
+.button {
+    display: inline-block;
+    padding: 15px 30px; /* Увеличиваем отступы внутри кнопки */
+    font-size: 20px; /* Увеличиваем размер шрифта кнопок */
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px; /* Увеличиваем радиус скругления */
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin: 15px; /* Увеличиваем внешние отступы */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button:active {
+    background-color: #004085;
+}
+.home-button {
+    background-color: green; /* Consistent with action button */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 30px; /* Padding for consistent size */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    position: absolute; /* Positioning to be at the top right */
+    top: 20px; /* Space from top */
+    right: 20px; /* Space from right */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Add hover effect for better user experience */
+.home-button:hover {
+    background-color: darkgreen; /* Darker green on hover */
+}

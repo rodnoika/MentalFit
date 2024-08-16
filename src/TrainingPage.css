@@ -1,0 +1,59 @@
+/* TrainingPage.css */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f4f4f4;
+
+}
+
+.training-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .page-title {
+    font-size: 2.5rem; /* Увеличение размера заголовка */
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px; /* Увеличение отступа снизу */
+  }
+  
+  .blocks-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Увеличение минимального размера блока */
+    gap: 30px; /* Увеличение промежутка между блоками */
+  }
+  
+  .block {
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Увеличение скругления углов */
+    padding: 40px; /* Увеличение внутреннего отступа */
+    text-align: center;
+    font-size: 1.5rem; /* Увеличение размера шрифта */
+    color: #333;
+    height: 150px; /* Установка фиксированной высоты блока */
+    cursor: pointer;
+    
+  }
+  .home-button {
+    background-color: green; /* Consistent with action button */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 30px; /* Padding for consistent size */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    position: absolute; /* Positioning to be at the top right */
+    top: 20px; /* Space from top */
+    right: 20px; /* Space from right */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Add hover effect for better user experience */
+.home-button:hover {
+    background-color: darkgreen; /* Darker green on hover */
+}
+  

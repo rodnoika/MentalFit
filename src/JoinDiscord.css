@@ -1,0 +1,76 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f4f4f4;
+}
+
+.discord-join-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: brown;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px; /* Увеличен отступ */
+    box-sizing: border-box; /* Учитываем padding в общей высоте */
+
+}
+
+.page-title {
+    font-size: 4rem; /* Увеличен размер шрифта */
+    margin-bottom: 30px; /* Увеличен отступ снизу */
+}
+
+.info-list {
+    list-style-type: disc;
+    padding-left: 30px; /* Увеличен отступ слева */
+    font-size: 2rem; /* Увеличен размер шрифта */
+    margin-bottom: 60px; /* Увеличен отступ снизу */
+    max-width: 800px; /* Увеличена максимальная ширина */
+    text-align: left;
+    margin-right: auto; /* Центрирование списка по горизонтали */
+}
+
+.info-list li {
+    color: green;
+    margin-bottom: 20px; /* Увеличен отступ снизу */
+}
+
+.join-button {
+    background-color: #ffffff;
+    color: #7289da; /* Цвет текста кнопки */
+    padding: 15px 30px; /* Уменьшены отступы внутри кнопки */
+    border-radius: 10px; /* Радиус скругления */
+    text-decoration: none;
+    font-size: 1.75rem; /* Уменьшен размер шрифта */
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    max-width: 25vw;
+    margin-left: 35%;
+}
+
+
+.join-button:hover {
+    background-color: #7289da; /* Цвет фона при наведении */
+    color: #ffffff;
+}
+.home-button {
+    background-color: green; /* Consistent with action button */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 30px; /* Padding for consistent size */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    position: absolute; /* Positioning to be at the top right */
+    top: 20px; /* Space from top */
+    right: 20px; /* Space from right */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    margin-bottom: 10px;
+}
+
+/* Add hover effect for better user experience */
+.home-button:hover {
+    background-color: darkgreen; /* Darker green on hover */
+}

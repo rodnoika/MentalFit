@@ -1,0 +1,98 @@
+/* Общие стили страницы */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f4f4f4;
+}
+
+.sign-in-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+    margin-left: 5vw;
+}
+
+.page-title {
+    font-size: 5rem; /* Увеличен размер заголовка */
+    margin-bottom: 30px; /* Увеличено расстояние от заголовка до формы */
+    margin-left: 2vw;
+    color:green
+
+}
+
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px; /* Увеличена максимальная ширина формы */
+    padding: 30px; /* Увеличены отступы внутри формы */
+    border-radius: 10px; /* Увеличен радиус скругления */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Увеличено расстояние между элементами формы */
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.25rem; /* Увеличен размер шрифта меток */
+    margin-bottom: 10px; /* Увеличено расстояние до поля ввода */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px; /* Увеличены внутренние отступы */
+    font-size: 1.25rem; /* Увеличен размер шрифта в поле ввода */
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Увеличен радиус скругления полей ввода */
+    box-sizing: border-box; /* Учитывает отступы и границы при расчете ширины */
+}
+
+.form-group input:focus {
+    outline: 2px solid #4CAF50; /* Добавлен стиль фокуса для удобства пользователей с клавиатурой */
+    outline-offset: 2px;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 20px; /* Увеличено расстояние до кнопки */
+    font-size: 1.125rem; /* Увеличен размер шрифта сообщения об ошибке */
+}
+
+.sign-in-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 30px; /* Увеличены отступы внутри кнопки */
+    border: none;
+    border-radius: 6px; /* Увеличен радиус скругления кнопки */
+    font-size: 1.25rem; /* Увеличен размер шрифта кнопки */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sign-in-button:hover {
+    background-color: #45a049;
+}
+
+.additional-links {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.forgot-password-link {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.no-account {
+    margin-top: 0.5rem;
+}
+
+.sign-up-link {
+    color: blue;
+    text-decoration: underline;
+}
+

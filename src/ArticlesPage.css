@@ -1,0 +1,96 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f4f4f4;
+
+}
+
+.articles-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+
+    height: 100vh;
+    box-sizing: border-box; /* Учитываем padding в общей высоте */
+
+    padding: 20px;
+  }
+  .div-intro {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .articles-container {
+    margin-top: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .article-card {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .article-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .article-content {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .load-more-button {
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .load-more-button:hover {
+    background-color: darkgreen;
+  }
+  
+  .load-more-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  .home-button {
+    background-color: green; /* Consistent with action button */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 30px; /* Padding for consistent size */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    position: absolute; /* Positioning to be at the top right */
+    top: 20px; /* Space from top */
+    right: 20px; /* Space from right */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Add hover effect for better user experience */
+.home-button:hover {
+    background-color: darkgreen; /* Darker green on hover */
+}
+  
